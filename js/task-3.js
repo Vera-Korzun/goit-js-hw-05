@@ -1,9 +1,11 @@
-const Storage = function (array) {
-  this.items = array;
-};
+class Storage {
+  constructor(array) {
+    this.items = array;
+  }
+}
 
 Storage.prototype.getItems = function () {
-  return `${this.items}`;
+  return this.items;
 };
 
 Storage.prototype.addItem = function (item) {

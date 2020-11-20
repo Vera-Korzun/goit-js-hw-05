@@ -1,8 +1,10 @@
-const User = function (array) {
-  this.name = array.name;
-  this.age = array.age;
-  this.followers = array.followers;
-};
+class User {
+  constructor(name, age, followers) {
+    this.name = name;
+    this.age = age;
+    this.followers = followers;
+  }
+}
 
 User.prototype.getInfo = function () {
   console.log(
