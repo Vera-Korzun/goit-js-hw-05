@@ -13,11 +13,6 @@ Storage.prototype.addItem = function (item) {
 };
 
 Storage.prototype.removeItem = function (item) {
-  //   for (const item of this.items) {
-  //     if (this.items[item] === item) {
-  //       this.items.splice(i, 1);
-  //     }
-  //   }
   const length = this.items.length;
   for (let i = 0; i < length; i += 1) {
     if (this.items[i] === item) {
