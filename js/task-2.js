@@ -4,11 +4,11 @@ class User {
     this.age = age;
     this.followers = followers;
   }
-  getInfo = function () {
+  getInfo() {
     console.log(
       `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
     );
-  };
+  }
 }
 
 const mango = new User({
